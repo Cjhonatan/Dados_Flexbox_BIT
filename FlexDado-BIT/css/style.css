@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
+
+/* El body define los estilos para el cuerpo de la pagina*/
+body{
+	margin: 0; /*Pone los márgenes de la página en 0, para quitar los espacios alrededor */
+	padding: 0; /*Pone el padding del body en 0, para eliminar los espacios dentro del body*/
+	font-family: 'Roboto', sans-serif; /*Elegimos la fuente para todo el body*/
+	background: #333; /* Color de fondo del body  */
+	color: #fff; /*Color de la fuente*/
+}
+/* Define los estilos para el header de la página*/
+header { 
+	padding: 20px; /* Establece el padding del header en 20 píxeles, 
+	lo que crea un espacio hacia adentro del header*/
+}
+/* Define los estilos para los h1*/
+h1{
+	font-weight: 700; /*Pone en mas gruesa la fuente*/
+	text-transform: uppercase;/*Convierte todo el texto en mayúsculas*/
+}
+/*Define los estilos para los párrafos en la página*/
+p{
+	font-weight: 300; /*Pone en mas gruesa la fuente*/
+}
+/*Define los estilos para los enlaces en la página*/
+a {
+	color: gray; /*Coloca color del texto del enlace en gris.*/
+}
+/*Define los estilos para las secciones en la página*/
+section {
+	display: flex; /*Elegimos el diseño de la sección para que podamos usar flexbox*/
+	justify-content: center; /*Centra horizontalmente el contenido de la sección*/
+	flex-wrap: wrap; /*Nos ayuda a que los elementos queden en la Seccion cuando este en un dispositivo mas pequeño*/
+}
+[class^="cara-"]{ /*Define los estilos para los elemento de html que tenga en la clase "cara-*/
+	display: flex; /*Establece el diseño del elemento para que podamos usar flexbox*/
+	margin: 1em; /*Pone una margen de 1em que es una unidad de medida relativa*/
+	width: 150px; /*El ancho del elemento en 150 píxeles*/
+	height: 150px; /*La altura del elemento en 150 píxeles*/
+	padding: 15px; /*Un relleno de 15 píxeles alrededor del elemento*/
+	background: #FEFEF6; /*El color de fondo del elemto queda blanco*/
+	border-radius: 10%; /*Bordea las equinas un 10% de cada elemento*/
+}
+/*Aca empezamos a ponerle estilos a la cara 1*/
+.cara-uno{
+	justify-content: center; /*Centra vertical y horizontal el contenido*/
+	align-items: center; /*Centra el contenido*/
+}
+/*Aca empezamos a ponerle estilos a la cara 2*/
+.cara-dos{
+	justify-content: space-between; /*Pone los elementos con el mismo espacio entre ellos*/
+}
+
+.cara-dos .punto:nth-child(2){ /*La pseudo-clase ":nth-child(2)" selecciona el segundo elemento "punto" dentro 
+	del elemento con la clase "cara-dos"*/
+	align-self: flex-end; /*Alinea el elemento en el final del extremo de abajo*/
+}
+/*Aca empezamos a ponerle estilos a la cara 3*/
+.cara-tres{
+	justify-content: space-between; /*Pone los elementos con el mismo espacio entre ellos*/
+}
+
+.cara-tres .punto:nth-child(2){/*Selecciona el segundo elemento "punto" dentro del elemento con la clase "cara-tres*/
+	align-self: center; /*Alienea el elemento punto en el centro*/
+}
+
+.cara-tres .punto:nth-child(3){ /*selecciona el tercer elemento "punto" dentro del elemento con la clase "cara-tres*/
+	align-self: flex-end; /*Alinea el elemento en el final del extremo de abajo*/
+}
+/*Aca empezamos a ponerle estilos a la cara 4*/
+.cara-cuatro{
+	justify-content: space-between; /*Pone los elementos con el mismo espacio entre ellos*/
+}
+
+.cara-cuatro .columna {
+	display: flex;  /*Establece el diseño del elemento para que podamos usar flexbox*/
+	flex-direction: column; /*Pon la dirección principal del eje como vertical*/
+	justify-content: space-between; /*Pone los elementos con el mismo espacio entre ellos*/
+}
+/*Aca empezamos a ponerle estilos a la cara 5*/
+.cara-cinco{
+	display: flex;  /*Establece el diseño del elemento para que podamos usar flexbox*/
+	justify-content: space-between; /*Pone los elementos con el mismo espacio entre ellos*/
+}
+
+.cara-cinco .columna {
+	display: flex;  /*Establece el diseño del elemento para que podamos usar flexbox*/
+	flex-direction: column; /*Pon la dirección principal del eje como vertical*/
+	justify-content: space-between; /*Pone los elementos con el mismo espacio entre ellos*/
+}
+/*Aca le ponemso estilo al punto del medio*/
+.cara-cinco .medio{
+	align-self: center; /*Alinea el elmento en el centro*/
+}
+/*Aca empezamos a ponerle estilos a la cara 6*/
+.cara-seis{
+	display: flex; /*Establece el diseño del elemento para que podamos usar flexbox*/
+	justify-content: space-between;  /*Pone los elementos con el mismo espacio entre ellos*/
+}
+
+.cara-seis .columna{
+	display: flex; /*Establece el diseño del elemento para que podamos usar flexbox*/
+	flex-direction: column; /*Pon la dirección principal del eje como vertical*/
+	justify-content: space-between; /*Pone los elementos con el mismo espacio entre ellos*/
+}
+/*Aca empezamos a ponerle estilos a los puntos*/
+.punto {
+	width: 20px; /* Pone el ancho del elemento en 20 píxeles.*/
+	height: 20px; /*Pone la altura del elemento en 20 píxeles.*/
+	border-radius: 50%; /*Le pone un border de 50% para crear los puntos (circulos)*/
+	background: black; /*Pone los puntos de color negro*/
+	box-shadow: inset 0 3px #111, inset 0 -3px #555; /*Nos ayuda para ponerle sombras a los puntos*/
+}
